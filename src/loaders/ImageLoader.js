@@ -46,6 +46,8 @@ THREE.ImageLoader.prototype = {
 
 		var image = document.createElement( 'img' );
 
+		image.src = '';
+
 		image.addEventListener( 'load', function ( event ) {
 
 			THREE.Cache.add( url, this );
